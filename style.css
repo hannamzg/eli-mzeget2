@@ -412,6 +412,9 @@ li{
         width: 100%;
         text-align: center;
         transition: 0.3s;
+        justify-content: start;
+        padding: 60px;
+
     }
 
     .nav-link{
