@@ -1,0 +1,383 @@
+/* Brown: #964B00
+Beige: #F5F5DC
+Green: #008000
+Neutral colors:
+Gray: #808080
+Black: #000000
+White: #FFFFFF
+Accent colors:
+Red: #FF0000
+Orange: #FFA500
+Blue: #0000FF
+ */
+
+
+/* nav */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+  .just-color.visible {
+    display: block;
+  }
+
+.just-color{
+    background-color: rgb(52, 58, 64,0.7); 
+    display: none;
+    /* set a fixed position and top value to keep the navbar at the top of the page */
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+header{
+    margin: auto;
+    max-width: 1000px;
+    border-bottom: dashed rgb(119, 117, 117) 1px;
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+}
+
+li{
+    list-style: none;
+}
+
+.navLogo{
+    width: 250px;
+} 
+
+.navbar{
+    min-height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   /*  padding: 0 25px; */
+    position: sticky;
+    top: 0px;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px; 
+    margin: 0;
+}
+
+.nav-branding{
+    font-size: 2rem;
+}
+
+
+.nav-link{
+    transition: 0.8s;
+    text-decoration: none;
+    color: #edede9 ;
+    font-size: 23px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.callAsBtnNav{
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.nav-link:hover  {
+    background-color: #d9d9d9;
+    color: #161616;
+    padding: 3px 7px;
+    border-radius: 3px;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+
+
+
+/* main */
+
+.headOfMain{
+    position: relative;
+    background-image: url(phots/background\ new.jpg);
+    width: 100%;
+    min-height: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* filter: brightness(90%); */
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 93%);
+}
+
+.headOfMain div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: white;
+    background-color: rgb(0, 0, 0,0.3);
+    height: 350px;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 93%);
+}
+
+.headOfMain div div{
+   padding: 25px;
+} 
+
+.button-contact{
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #808080;
+    width: fit-content;
+    border: none;
+
+}
+
+/* title */
+
+.title{
+   max-width: 1000px;
+   margin: 0 auto;
+   padding: 20px;
+}
+
+.justLine{
+    width: 150px;
+    height: 5px;
+    background-color: #343a40;
+    border-radius: 10px;
+}
+
+.title h1{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 20px auto;
+}
+
+.title p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 20px auto;
+    font-size: 20px;
+}
+
+/* phoneIcone */
+.phoneIcone{
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+
+}
+
+/* ulOfDiscribshinPoint
+ */
+
+.ulOfDiscribshinPoint{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+} 
+
+.ulOfDiscribshinPoint li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px auto;
+}
+
+.ulOfDiscribshinPoint li i{
+   margin: 0;
+   color: red;
+   font-size: 30px;
+}
+
+.ulOfDiscribshinPoint li p{ 
+    margin: 0;
+}
+
+
+/* imagesilder */
+
+
+.imageSilder{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    padding: 10px;
+}
+
+.wrapper {
+  display: flex;
+  grid-gap: 1rem;
+  max-width: 768px;
+  width: 100%;
+  overflow-x: auto;
+  scroll-snap-type: x;
+  cursor: grab;
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* for firefox */
+  padding: 20px;
+  
+}
+
+.wrapper::-webkit-scrollbar { /* for chrome */
+  display: none;
+}
+
+.slider {
+  min-width: calc(50% - .5rem); 
+  height: 200px;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  scroll-snap-align: start;
+  user-select: none;
+  margin:auto 50px;
+  border-radius: 10px;
+}
+
+/* aboutAsWithPhotos */
+
+.aboutAsWithPhotos{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: rgb(0, 0, 0,0.4);
+    padding: 20px;
+}
+
+.aboutAsWithPhotos div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+}
+
+.aboutAsWithPhotos div h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+}
+
+.aboutAsWithPhotos div img{ 
+   width: 100px;
+   height: 100px;
+}
+
+@media only screen and (max-width: 800px) {
+    
+    
+    .hamburger{
+            display: block;
+            font-size: 30px;
+            margin: 10px;
+    }
+    
+    .navbar{
+        justify-content: space-between;
+    }
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 80px;
+        height: 100vh;
+        gap: 20px;
+        flex-direction: column;
+        background-color: #343a40;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-link{
+        font-size: 30px;
+    }
+
+    .callAsBtnNav{
+        padding: 5px 10px;
+        border-radius: 3px;
+        font-size: 35px;
+    }
+    .nav-menu.active{
+        left: 0;
+    }
+    .navLogo{
+        width: 150px;
+        margin: 10px;
+    } 
+
+    .title p{
+        font-size: 15px;
+    }
+    
+
+    .ulOfDiscribshinPoint li i{
+       font-size: 20px;
+    }
+    
+    .ulOfDiscribshinPoint li p{ 
+        font-size: 13px;
+    }
+
+
+
+    /* imagesilder */
+    .carousel-item img {
+        display: block; 
+        max-width: 100%; 
+        max-height: 100px;
+        height: auto; 
+    }
+
+}
+
+
+@media only screen and (max-width: 400px) {
+    
+    
+
+    .title p{
+        font-size: 12px;
+    }
+    
+
+}
