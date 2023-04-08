@@ -1,14 +1,14 @@
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 const slider = document.getElementsByClassName('slider');
-
+const inputRage =document.getElementById("inputRage");
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var modal = document.getElementById("myModal");
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
 
-let t=0;
+
 
 hamburger.onclick = function () {
     navMenu.classList.toggle("active");
@@ -74,4 +74,18 @@ var span = document.getElementsByClassName("close")[0];
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() { 
   modal.style.display = "none";
+}
+
+
+//input rage
+
+
+window.onscroll = function() {
+  let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  let scrolled = (winScroll / height) * 100;
+
+
+  inputRage.style.width =scrolled + "%";
+  inputRage.style.height += 10 + "px";
 }

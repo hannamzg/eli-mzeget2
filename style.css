@@ -13,7 +13,18 @@ Blue: #0000FF
 
 
 /* nav */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@keyframes mymove {
+    0%   {
+        padding: 3px;
+    }
+
+    100% {
+        padding: 5px;
+    }
+}
 
 *{
     margin: 0;
@@ -23,15 +34,17 @@ Blue: #0000FF
 }
 
 
-  .just-color.visible {
+.just-color.visible {
     display: block;
-  }
+     background-color: rgba(42, 45, 48, 0.7); 
+}
 
 .just-color{
-    background-color: rgb(52, 58, 64,0.7); 
-    display: none;
+   
+    background-color: #343a40;
+    display: block;
     /* set a fixed position and top value to keep the navbar at the top of the page */
-    position: fixed;
+    position: sticky;
     top: 0;
     z-index: 1000;
     width: 100%;
@@ -86,6 +99,7 @@ li{
 }
 
 .callAsBtnNav{
+    border: none;
     background-color: green;
     color: white;
     text-decoration: none;
@@ -107,6 +121,17 @@ li{
     cursor: pointer;
 }
 
+
+/* inputRang*/
+
+#inputRage {
+   position: fixed;
+   top: 80px;
+   z-index: 1000;
+   width: 0;
+   height: 0;
+   background-color: #588157;
+}
 
 
 
@@ -233,12 +258,13 @@ li{
     margin: 0 auto;
     width: 100%;
     padding: 10px;
-}
+   /*  background-color: rgb(0, 0, 0,0.2);*/
+} 
 
 .wrapper {
   display: flex;
   grid-gap: 1rem;
-  max-width: 1000px;
+  /* max-width: 1000px; */
   width: 100%;
   overflow-x: auto;
   scroll-snap-type: x;
@@ -246,6 +272,9 @@ li{
   scroll-behavior: smooth;
   scrollbar-width: none; /* for firefox */
   padding: 20px;
+  background-color: #343a40;
+  border-radius: 20px;
+  padding: 50px;
   
 }
 
@@ -254,7 +283,7 @@ li{
 }
 
 .slider {
-  min-width: calc(50% - .5rem);
+ width: 400px;
   height: 250px;
   aspect-ratio: 1 / 1;
   display: flex;
@@ -361,7 +390,9 @@ li{
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
-    background-color: rgb(0, 0, 0,0.4);
+    background: linear-gradient(#808080, #343a40);
+    -webkit-clip-path: polygon(0 7%, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 7%, 100% 0%, 100% 100%, 0% 100%);
     padding: 20px;
 }
 
@@ -383,10 +414,71 @@ li{
     font-size: 50px;
 }
 
-.aboutAsWithPhotos div img{ 
-   width: 100px;
-   height: 100px;
-}
+
+.aboutAsWithPhotos div i{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+ }
+
+
+
+
+
+
+
+ /* deal */
+
+ .deal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 50px auto;
+    max-width: 1000px;
+
+ }
+
+ .deal div h2{
+    padding: 5px;
+    font-weight: bolder;
+    margin: 10px auto;
+ }
+
+ .deal div div img{
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+ }  
+
+ .deal div div{
+    margin: 10px auto;
+ }
+
+ .deal div p {
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+ }
+
+ .callAsBtn{
+    animation: mymove 1s infinite ease-in-out;
+    border: none;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+
 
 @media only screen and (max-width: 800px) {
     
@@ -458,8 +550,11 @@ li{
     }
 
     .slider {
-        min-width: calc(50% - .5rem);
-        height: 150px;
+       /*  width: calc(100% - .5rem); */
+        width: 250px;
+        min-width: 250px;
+        max-width: 250px !important;
+        height: 170px;
         aspect-ratio: 1 / 1;
         display: flex;
         justify-content: center;
