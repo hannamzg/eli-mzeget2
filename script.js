@@ -14,6 +14,9 @@ hamburger.onclick = function () {
     navMenu.classList.toggle("active");
 }
 
+function closeTheMenu() {
+  navMenu.classList.remove("active");
+}
 
 var navbar = document.querySelector('.just-color');
 window.addEventListener('scroll', function() {
