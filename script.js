@@ -1,5 +1,13 @@
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
+const slider = document.getElementsByClassName('slider');
+
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var modal = document.getElementById("myModal");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+
 let t=0;
 
 hamburger.onclick = function () {
@@ -42,7 +50,25 @@ wrapper.addEventListener('mousemove', function (e) {
   if(!pressed) {
     return
   }
-  console.dir(wrapper);
   this.scrollLeft += startX - e.clientX;
 
 })
+
+
+for(let i=0; i<slider.length; i++){
+  slider[i].onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+  
+}
+
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
