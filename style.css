@@ -16,15 +16,6 @@ Blue: #0000FF
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-@keyframes mymove {
-    0%   {
-        padding: 3px;
-    }
-
-    100% {
-        padding: 5px;
-    }
-}
 
 *{
     margin: 0;
@@ -246,6 +237,8 @@ li{
 
 .ulOfDiscribshinPoint li p{ 
     margin: 0;
+    font-size: 20px;
+    padding: 10px;
 }
 
 
@@ -457,18 +450,18 @@ li{
     margin: 10px auto;
  }  
 
- .deal div div{
+.deal div div{
     margin: 10px auto;
  }
 
- .deal div p {
+.deal div p {
     text-align: center;
-    font-size: 18px;
-    padding: 20px;
+    font-size: 22px;
+    padding: 20px;    
+
  }
 
- .callAsBtn{
-    animation: mymove 1s infinite ease-in-out;
+.callAsBtn{
     border: none;
     background-color: green;
     color: white;
@@ -477,8 +470,42 @@ li{
     border-radius: 3px;
     font-size: 30px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
- }
+}
 
+/* mtbhEli */
+
+.mtbhEli{
+    margin: 60px auto;
+    display:flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.mtbhEli {
+    margin: 60px auto;
+    display:flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.mtbhEli div img{
+    width: 40vw;
+    min-width: 350px;
+}
+.mtbhEli div div{
+   margin-right: 10px;
+   margin: 10px 10px 0px;
+}
+
+.mtbhEli div h1{
+  font-size: 40px;
+  padding: 10px;
+}
+
+.mtbhEli div p{
+    font-size: 20px;
+    padding: 10px;
+}
 
 @media only screen and (max-width: 800px) {
     
@@ -536,7 +563,7 @@ li{
     }
     
     .ulOfDiscribshinPoint li p{ 
-        font-size: 13px;
+        font-size: 16px;
     }
 
 
@@ -564,8 +591,37 @@ li{
         user-select: none;
         margin:auto 50px;
         border-radius: 10px;
-      }
-      
+    }
+
+
+      /* mtbhEli */
+
+    .mtbhEli{
+        margin: 40px auto;
+        flex-direction: column-reverse;
+        
+    }
+
+    .mtbhEli {
+        margin: 30px auto;
+    }
+
+    .mtbhEli div img{
+        width: 80vw;
+        min-width: 250px;
+    }
+
+
+    .mtbhEli div h1{
+        font-size: 30px;
+        padding: 10px;
+    }
+
+    .mtbhEli div p{
+        font-size: 17px;
+        padding: 15px;
+    }
+        
 
 }
 
