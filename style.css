@@ -554,7 +554,7 @@ li{
     } 
 
     .title p{
-        font-size: 15px;
+        font-size: 18px;
     }
     
 
@@ -563,7 +563,7 @@ li{
     }
     
     .ulOfDiscribshinPoint li p{ 
-        font-size: 16px;
+        font-size: 20px;
     }
 
 
@@ -599,7 +599,6 @@ li{
     .mtbhEli{
         margin: 40px auto;
         flex-direction: column-reverse;
-        
     }
 
     .mtbhEli {
