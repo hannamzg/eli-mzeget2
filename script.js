@@ -34,6 +34,7 @@ const wrapper = document.querySelector('.wrapper')
 let pressed = false;
 let startX = 0;
 let t=-100;
+wrapper.scrollLeft = -322
 
 wrapper.addEventListener("touchstart", function () {
   pressed = true
