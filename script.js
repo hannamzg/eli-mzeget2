@@ -36,13 +36,11 @@ let startX = 0;
 let t=-100;
 
 wrapper.addEventListener("touchstart", function () {
-  console.log(11);
   pressed = true
  
 })
 
 wrapper.addEventListener("touchend", function () {
-  console.log(12222);
   pressed = false
  
 })
@@ -74,7 +72,7 @@ wrapper.addEventListener('mousemove', function (e) {
 setInterval(()=>{
   if (pressed===false) {
     if ( (wrapper.scrollLeft -101) > t ) {
-      t = -100
+      t = 0
   }
 
     wrapper.scrollLeft =t;
