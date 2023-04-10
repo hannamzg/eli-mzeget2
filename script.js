@@ -35,6 +35,16 @@ let pressed = false;
 let startX = 0;
 let t=-100;
 
+wrapper.addEventListener("touchstart", function () {
+  pressed = true
+ 
+})
+
+wrapper.addEventListener("touchend", function () {
+  pressed = false
+ 
+})
+
 wrapper.addEventListener('mousedown', function (e) {
   pressed = true
   startX = e.clientX 
