@@ -69,7 +69,7 @@ wrapper.addEventListener('mousemove', function (e) {
 
 })
 
-setInterval(()=>{
+/* setInterval(()=>{
   if (pressed===false) {
     if ( (wrapper.scrollLeft -101) > t ) {
       t = 0
@@ -81,7 +81,7 @@ setInterval(()=>{
   }
   
 },3000) 
- 
+  */
  
   
  

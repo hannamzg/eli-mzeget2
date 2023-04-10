@@ -264,7 +264,7 @@ li{
   scroll-behavior: smooth;
   scrollbar-width: none; /* for firefox */
   padding: 20px;
-  background-color: #343a40;
+  /* background-color: #343a40; */
   border-radius: 20px;
   padding: 50px;
   
@@ -627,7 +627,7 @@ li{
     }
     
     .ulOfDiscribshinPoint li p{ 
-        font-size: 20px;
+        font-size: 17px;
     }
 
 
@@ -699,7 +699,7 @@ li{
 }
 
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 350px) {
     
     
 
@@ -707,5 +707,20 @@ li{
         font-size: 16px;
     }
     
-
+    .slider {
+        /*  width: calc(100% - .5rem);  */
+         aspect-ratio: 1 / 1;
+         display: flex;
+         min-width: 200px;
+         max-width: 180px;
+         height: auto;
+         max-height: 130px; 
+         justify-content: center;
+         align-items: center;
+         color: #fff;
+         scroll-snap-align: start;
+         user-select: none;
+         margin:0; 
+         border-radius: 10px;
+     }
 }
