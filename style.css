@@ -259,8 +259,7 @@ li{
   grid-gap: 1rem;
   /* max-width: 1000px; */
   width: 100%;
-  overflow-x: auto;
-  scroll-snap-type: x;
+  overflow-x: auto; /*  scroll-snap-type: x; */
   cursor: grab;
   scroll-behavior: smooth;
   scrollbar-width: none; /* for firefox */
@@ -272,11 +271,12 @@ li{
 }
 
 .wrapper::-webkit-scrollbar { /* for chrome */
-  display: none;
+   display: none; 
+
 }
 
 .slider {
- width: 400px;
+  width: 400px;
   height: 250px;
   aspect-ratio: 1 / 1;
   display: flex;
@@ -578,10 +578,10 @@ li{
 
     .slider {
        /*  width: calc(100% - .5rem); */
-        width: 250px;
-        min-width: 250px;
-        max-width: 250px !important;
-        height: 170px;
+        width: 50vw;
+        max-width: 350px !important; 
+        height: auto; 
+        max-height: 250px;
         aspect-ratio: 1 / 1;
         display: flex;
         justify-content: center;
@@ -589,7 +589,7 @@ li{
         color: #fff;
         scroll-snap-align: start;
         user-select: none;
-        margin:auto 50px;
+        margin:0; 
         border-radius: 10px;
     }
 
