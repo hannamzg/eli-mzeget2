@@ -31,8 +31,9 @@ window.addEventListener('scroll', function() {
 
 const wrapper = document.querySelector('.wrapper')
 
-let pressed = false
-let startX = 0
+let pressed = false;
+let startX = 0;
+let t=-100;
 
 wrapper.addEventListener('mousedown', function (e) {
   pressed = true
@@ -53,9 +54,28 @@ wrapper.addEventListener('mousemove', function (e) {
   if(!pressed) {
     return
   }
+ 
   this.scrollLeft += startX - e.clientX;
 
 })
+
+setInterval(()=>{
+  if (pressed===false) {
+    if ( (wrapper.scrollLeft -101) > t ) {
+      t = -10
+  }
+
+    wrapper.scrollLeft =t;
+    t-=10;
+
+  }
+  
+},100) 
+ 
+ 
+  
+ 
+
 
 
 for(let i=0; i<slider.length; i++){
