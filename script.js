@@ -62,15 +62,15 @@ wrapper.addEventListener('mousemove', function (e) {
 setInterval(()=>{
   if (pressed===false) {
     if ( (wrapper.scrollLeft -101) > t ) {
-      t = -10
+      t = -100
   }
 
     wrapper.scrollLeft =t;
-    t-=10;
+    t-=100;
 
   }
   
-},100) 
+},3000) 
  
  
   
