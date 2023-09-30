@@ -127,6 +127,12 @@ li{
 
 
 /* main */
+body{
+    background-image: url("phots/gneralBackgroundImag.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+}
 
 .headOfMain{
     position: relative;

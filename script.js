@@ -120,3 +120,4 @@ window.onscroll = function() {
   inputRage.style.width =scrolled + "%";
   inputRage.style.height += 10 + "px";
 }
+
